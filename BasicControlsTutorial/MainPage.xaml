@@ -8,4 +8,7 @@
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
 
+    <Button x:Name="btn"
+            Text="Kiên khùng"/>
+
 </ContentPage>
