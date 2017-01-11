@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:BasicControlsTutorial"
              x:Class="BasicControlsTutorial.MainPage">
 
-	<Label Text="ABC!" 
+	<Label Text="Hello Anh ÂN" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
 
