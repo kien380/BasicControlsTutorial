@@ -4,11 +4,10 @@
              xmlns:local="clr-namespace:BasicControlsTutorial"
              x:Class="BasicControlsTutorial.MainPage">
 
-	<Label Text="Mệt!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-
-    <Button x:Name="btn"
-            Text="Kiên khùng"/>
+    <StackLayout HorizontalOptions="Center"
+                 VerticalOptions="Center">
+        <Button Text="Dialog"
+                Clicked="Button_Clicked_DialogPage"/>
+    </StackLayout>
 
 </ContentPage>

@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BasicControlsTutorial.Features;
+using System;
 using Xamarin.Forms;
 
 namespace BasicControlsTutorial
@@ -12,6 +9,11 @@ namespace BasicControlsTutorial
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private async void Button_Clicked_DialogPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DialogPage());
         }
     }
 }
