@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:BasicControlsTutorial"
              x:Class="BasicControlsTutorial.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
+	<Label Text="ABC!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
 

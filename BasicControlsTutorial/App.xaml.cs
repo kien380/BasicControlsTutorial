@@ -8,7 +8,7 @@ using Xamarin.Forms;
 namespace BasicControlsTutorial
 {
     public partial class App : Application
-    {
+    {       
         public App()
         {
             InitializeComponent();
