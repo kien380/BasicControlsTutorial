@@ -13,7 +13,7 @@ namespace BasicControlsTutorial
 
         private async void Button_Clicked_DialogPage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new DialogPage());
+            await Navigation.PushAsync(new PopupPage());
         }
     }
 }
