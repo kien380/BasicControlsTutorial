@@ -39,9 +39,6 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Control\PopupLayout\PopupLayout.cs" />
-    <Compile Include="Features\PopupPage.xaml.cs">
-      <DependentUpon>PopupPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -72,7 +69,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Features\PopupPage.xaml">
+    <EmbeddedResource Include="Features\DialogPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
