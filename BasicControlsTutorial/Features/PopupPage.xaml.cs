@@ -46,7 +46,7 @@ namespace BasicControlsTutorial.Features
                 {
                     new Label
                     {
-                        Text = "Login",
+                        Text = "Login:",
                         FontSize = 20
                     },
 
