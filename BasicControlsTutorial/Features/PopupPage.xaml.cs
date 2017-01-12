@@ -1,4 +1,9 @@
-﻿using BasicControlsTutorial.Control;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 using Xamarin.Forms;
 
 namespace BasicControlsTutorial.Features
@@ -31,7 +36,6 @@ namespace BasicControlsTutorial.Features
             _PopupContent = new PopupLayout();
             _PopupContent.Content = CreatePopupContent();
 
-            this.Content = _PopupContent;
         }
 
         /// <summary>
@@ -84,13 +88,12 @@ namespace BasicControlsTutorial.Features
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.Center,
                 BackgroundColor = Color.Gray,
-                WidthRequest = 300,
                 Padding = 10,
                 Children =
                 {
                     new Label
                     {
-                        Text = "Login:",
+                        Text = "Login",
                         FontSize = 20
                     },
 
@@ -100,9 +103,7 @@ namespace BasicControlsTutorial.Features
                     {
                         Placeholder = "Password",
                         IsPassword = true
-                    },
-
-                    btLogin
+                    }
                 }
             };
 
