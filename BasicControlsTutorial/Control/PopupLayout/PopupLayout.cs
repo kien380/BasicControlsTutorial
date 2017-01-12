@@ -66,6 +66,7 @@ namespace BasicControlsTutorial.Control
         public PopupLayout()
         {
             base.Content = this.layout = new RelativeLayout();
+            this.popup = null; 
         }
 
 		#region Content property
@@ -146,6 +147,10 @@ namespace BasicControlsTutorial.Control
             this.layout.Children.Add(this.popup, xConstraint, yConstraint, widthConstraint, heightConstraint);
 
             this.layout.ForceLayout();
+
+            // Add animation when show Popup
+            var scaleUpAnimation = new Animation(v => this.popup.Scale = v, 0, 1, Easing.SpringIn);
+            scaleUpAnimation.Commit(this, "Scale Up Animation");
         }
         
 
@@ -193,8 +198,14 @@ namespace BasicControlsTutorial.Control
         /// </summary>
         public void DismissPopup()
         {
+
             if (this.popup != null)
             {
+                /*
+                // Add animation when dismiss popup
+                var scaleDownAnimation = new Animation(v => this.layout.Scale = v, 1, 0, Easing.SpringOut);
+                scaleDownAnimation.Commit(this, "Scale Down Animation");*/
+
                 this.layout.Children.Remove(this.popup);
                 this.popup = null;
             }
